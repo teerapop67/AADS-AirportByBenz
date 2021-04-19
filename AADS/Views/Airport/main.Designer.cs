@@ -87,11 +87,11 @@ namespace AADS.Views.Airport
             // lbLocation
             // 
             this.lbLocation.AutoSize = true;
-            this.lbLocation.Location = new System.Drawing.Point(49, 209);
+            this.lbLocation.Location = new System.Drawing.Point(39, 206);
             this.lbLocation.Name = "lbLocation";
-            this.lbLocation.Size = new System.Drawing.Size(62, 17);
+            this.lbLocation.Size = new System.Drawing.Size(54, 17);
             this.lbLocation.TabIndex = 54;
-            this.lbLocation.Text = "Location";
+            this.lbLocation.Text = "ตำแหน่ง";
             // 
             // txtProvince
             // 
@@ -103,11 +103,11 @@ namespace AADS.Views.Airport
             // lbProvince
             // 
             this.lbProvince.AutoSize = true;
-            this.lbProvince.Location = new System.Drawing.Point(49, 179);
+            this.lbProvince.Location = new System.Drawing.Point(48, 179);
             this.lbProvince.Name = "lbProvince";
-            this.lbProvince.Size = new System.Drawing.Size(63, 17);
+            this.lbProvince.Size = new System.Drawing.Size(45, 17);
             this.lbProvince.TabIndex = 52;
-            this.lbProvince.Text = "Province";
+            this.lbProvince.Text = "จังหวัด";
             // 
             // txtCountry
             // 
@@ -119,31 +119,31 @@ namespace AADS.Views.Airport
             // lbCountry
             // 
             this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(49, 151);
+            this.lbCountry.Location = new System.Drawing.Point(48, 151);
             this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(57, 17);
+            this.lbCountry.Size = new System.Drawing.Size(49, 17);
             this.lbCountry.TabIndex = 50;
-            this.lbCountry.Text = "Country";
+            this.lbCountry.Text = "ประเทศ";
             // 
             // lbLabel
             // 
             this.lbLabel.AutoSize = true;
-            this.lbLabel.Location = new System.Drawing.Point(49, 95);
+            this.lbLabel.Location = new System.Drawing.Point(18, 67);
             this.lbLabel.Name = "lbLabel";
-            this.lbLabel.Size = new System.Drawing.Size(43, 17);
+            this.lbLabel.Size = new System.Drawing.Size(84, 17);
             this.lbLabel.TabIndex = 49;
-            this.lbLabel.Text = "Label";
+            this.lbLabel.Text = "ชื่อย่อสนามบิน";
             // 
             // txtLabel
             // 
-            this.txtLabel.Location = new System.Drawing.Point(118, 95);
+            this.txtLabel.Location = new System.Drawing.Point(118, 67);
             this.txtLabel.Name = "txtLabel";
             this.txtLabel.Size = new System.Drawing.Size(56, 22);
             this.txtLabel.TabIndex = 48;
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(118, 123);
+            this.txtType.Location = new System.Drawing.Point(118, 95);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(148, 22);
             this.txtType.TabIndex = 47;
@@ -151,15 +151,15 @@ namespace AADS.Views.Airport
             // lbType
             // 
             this.lbType.AutoSize = true;
-            this.lbType.Location = new System.Drawing.Point(49, 123);
+            this.lbType.Location = new System.Drawing.Point(48, 95);
             this.lbType.Name = "lbType";
-            this.lbType.Size = new System.Drawing.Size(40, 17);
+            this.lbType.Size = new System.Drawing.Size(49, 17);
             this.lbType.TabIndex = 46;
-            this.lbType.Text = "Type";
+            this.lbType.Text = "ประเภท";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(118, 67);
+            this.txtName.Location = new System.Drawing.Point(118, 123);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(148, 22);
             this.txtName.TabIndex = 45;
@@ -167,11 +167,11 @@ namespace AADS.Views.Airport
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(49, 67);
+            this.lbName.Location = new System.Drawing.Point(27, 123);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(45, 17);
+            this.lbName.Size = new System.Drawing.Size(70, 17);
             this.lbName.TabIndex = 44;
-            this.lbName.Text = "Name";
+            this.lbName.Text = "ชื่อสนามบิน";
             // 
             // btnAdd
             // 
@@ -180,7 +180,7 @@ namespace AADS.Views.Airport
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(93, 46);
             this.btnAdd.TabIndex = 37;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "สร้าง";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 

@@ -16,5 +16,11 @@ namespace AADS.Views.ShowCategory
         {
             InitializeComponent();
         }
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            var CorridorPage = new Views.Corridor.mains();
+            panelShowDetail.Controls.Clear();
+            panelShowDetail.Controls.Add(CorridorPage);
+        }
     }
 }

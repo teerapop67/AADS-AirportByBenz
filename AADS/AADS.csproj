@@ -187,11 +187,18 @@
     <Compile Include="Views\CommandMessage\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Corridor\KeepdataLatLng.cs" />
     <Compile Include="Views\Corridor\main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Corridor\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Corridor\mains.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Corridor\mains.Designer.cs">
+      <DependentUpon>mains.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DailyAirMovementReport\main.cs">
       <SubType>Form</SubType>
@@ -400,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Corridor\main.resx">
       <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Corridor\mains.resx">
+      <DependentUpon>mains.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DailyAirMovementReport\main.resx">
       <DependentUpon>main.cs</DependentUpon>

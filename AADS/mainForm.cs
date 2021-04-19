@@ -29,6 +29,7 @@ namespace AADS
     {
         public MarkerHandler handler;
 
+        public event EventHandler<PointLatLng> _GetPoint;//event GetPointLatlng
         public event EventHandler<int> SelectMakrer;//edit 
         public event EventHandler<GMapMarker> MarkerCurrent;
         public event EventHandler<int> DelMarkerCurrent;//delete
@@ -476,7 +477,7 @@ namespace AADS
                 };
                 MarkerHandler handler = MarkerHandler.Instance;
                 handler.InvokeLandmarkAdd(args);
-                    
+                _GetPoint?.Invoke(this, point);
             }
            
             if (action != null)
@@ -547,6 +548,7 @@ namespace AADS
             var control = new main();
 
             AirportMarkerDetails.airportOpen = false;
+            OpenCorridor.OpenCorridors = false;
             
 
             timeNow.Start();
@@ -645,7 +647,7 @@ namespace AADS
 
         private void btnShow_Line_Click(object sender, EventArgs e)
         {
-            var LinePage = new Views.ShowCategory.Polygon();
+            var LinePage = new Views.ShowCategory.Line();
             panelRightShow.Controls.Clear();
             panelRightShow.Controls.Add(LinePage);
         }

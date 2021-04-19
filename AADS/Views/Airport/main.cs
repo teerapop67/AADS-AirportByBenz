@@ -123,7 +123,7 @@ namespace AADS.Views.Airport
                         ListMarkerdetail.Tag.Add(Convert.ToInt32(marker.Tag));
                         MessageBox.Show("ADD Completed", "ADD");
                         blankData();
-                        MessageBox.Show("dasd");
+                        //test
                     }
                     else
                     {
