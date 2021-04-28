@@ -36,6 +36,8 @@ namespace AADS.Views.Corridor
             this.btnSide1 = new System.Windows.Forms.Button();
             this.btnSide2 = new System.Windows.Forms.Button();
             this.listPoint = new System.Windows.Forms.ListBox();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -75,9 +77,9 @@ namespace AADS.Views.Corridor
             // 
             // btnSide1
             // 
-            this.btnSide1.Location = new System.Drawing.Point(56, 128);
+            this.btnSide1.Location = new System.Drawing.Point(70, 128);
             this.btnSide1.Name = "btnSide1";
-            this.btnSide1.Size = new System.Drawing.Size(75, 23);
+            this.btnSide1.Size = new System.Drawing.Size(77, 34);
             this.btnSide1.TabIndex = 4;
             this.btnSide1.Text = "Side1";
             this.btnSide1.UseVisualStyleBackColor = true;
@@ -85,9 +87,9 @@ namespace AADS.Views.Corridor
             // 
             // btnSide2
             // 
-            this.btnSide2.Location = new System.Drawing.Point(257, 128);
+            this.btnSide2.Location = new System.Drawing.Point(247, 128);
             this.btnSide2.Name = "btnSide2";
-            this.btnSide2.Size = new System.Drawing.Size(75, 23);
+            this.btnSide2.Size = new System.Drawing.Size(82, 34);
             this.btnSide2.TabIndex = 5;
             this.btnSide2.Text = "Side2";
             this.btnSide2.UseVisualStyleBackColor = true;
@@ -101,13 +103,35 @@ namespace AADS.Views.Corridor
             this.listPoint.ItemHeight = 16;
             this.listPoint.Location = new System.Drawing.Point(0, 184);
             this.listPoint.Name = "listPoint";
-            this.listPoint.Size = new System.Drawing.Size(435, 516);
+            this.listPoint.Size = new System.Drawing.Size(435, 260);
             this.listPoint.TabIndex = 6;
+            // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(116, 450);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(78, 48);
+            this.btnStop.TabIndex = 7;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(218, 450);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(78, 48);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // mains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.listPoint);
             this.Controls.Add(this.btnSide2);
             this.Controls.Add(this.btnSide1);
@@ -132,5 +156,7 @@ namespace AADS.Views.Corridor
         private System.Windows.Forms.Button btnSide1;
         private System.Windows.Forms.Button btnSide2;
         private System.Windows.Forms.ListBox listPoint;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

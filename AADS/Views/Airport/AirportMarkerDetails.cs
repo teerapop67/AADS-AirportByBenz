@@ -13,6 +13,8 @@ namespace AADS
         public static double Lngtitude;
 
         public static bool airportOpen;
+        public static Dictionary<string, string> openWith =
+                                                new Dictionary<string, string>();
     }
     
     class MarkerDetails

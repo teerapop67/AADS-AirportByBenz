@@ -33,6 +33,8 @@ namespace AADS
         public event EventHandler<int> SelectMakrer;//edit 
         public event EventHandler<GMapMarker> MarkerCurrent;
         public event EventHandler<int> DelMarkerCurrent;//delete
+        public event EventHandler<GMapRoute> RouteCurrent;
+
 
 
         private List<PointLatLng> _points = new List<PointLatLng>();
@@ -164,6 +166,7 @@ namespace AADS
                 //Console.WriteLine(CPC.rhumbBearingTo(new PointLatLng(51.127, 1.338),new PointLatLng(50.964, 1.853)).ToString());
             }
         }
+
         void updateMinMap()
         {
             minMap1.Position = mainMap.Position;
@@ -735,6 +738,12 @@ namespace AADS
         private void mainMap_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void mainMap_OnRouteClick(GMapRoute item, MouseEventArgs e)
+        {
+            MessageBox.Show("asdsadasd");
+            RouteCurrent?.Invoke(this, item);
         }
     }
 }
